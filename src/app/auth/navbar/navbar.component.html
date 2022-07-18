@@ -1,0 +1,14 @@
+<nav class="t-0 absolute z-10 w-full py-5 px-10 flex flex-wrap justify-between">
+    <div class="text-white text-5xl font-semibold">
+        Logo
+    </div>
+    <button #menu class="md:hidden text-4xl duration-300" (click)="collapse=!collapse" [ngClass]="{'rotate-90': !collapse}"> <i class="fas fa-bars text-white"></i> </button>
+    <div class="w-full md:hidden"></div>
+    <div #displayMenu class="w-full mt-5 md:mt-0 md:flex md:w-auto bg-gray-700 rounded" [ngClass]="{'hidden': collapse}">
+        <ul class="flex flex-col md:flex-row items-center px-0 md:px-5 w-full">
+            <li class="p-2 font-medium tracking-tight text-white text-lg hover:text-teal-500 w-full flex justify-center md:bg-transparent md:w-auto"><a routerLink="/login" routerLinkActive="text-teal-600"><i class="fas fa-key mx-2"></i>Iniciar sesión</a></li>
+            <li class="p-2 font-medium tracking-tight text-white text-lg hover:text-teal-500 w-full flex justify-center md:bg-transparent md:w-auto"><a routerLink="/register" routerLinkActive="text-teal-600"><i class="fas fa-user-circle mx-2"></i> Registrarse</a></li>
+            <li class="p-2 font-medium tracking-tight text-white text-lg hover:text-teal-500 w-full flex justify-center md:bg-transparent md:w-auto"><a routerLink="/dashboard" routerLinkActive="text-teal-600"><i class="fas fa-rocket mx-2"></i>Dashboard</a></li>
+        </ul>
+    </div>
+</nav>

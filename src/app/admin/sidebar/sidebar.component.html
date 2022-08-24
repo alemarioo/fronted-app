@@ -5,12 +5,12 @@
     <a class="flex w-full justify-start items-center h-14 mt-3 font-semibold text-white rounded transition-all duration-150 px-3 cursor-pointer group-hover:text-4xl group-hover:justify-center group-hover:duration-500" [ngClass]="{'!text-4xl !justify-center !duration-500': collapse}">
         LOGO
     </a>
-    <a class="flex w-full justify-start items-center h-14 mt-3 duration-700 hover:bg-slate-900 rounded px-3 cursor-pointer" routerLink="perfil" routerLinkActive="border-r-2 border-r-teal-500">
+    <a class="flex w-full justify-start items-center h-14 mt-3 transition-colors duration-700 hover:bg-slate-900 rounded px-3 cursor-pointer" routerLink="perfil" routerLinkActive="border-r-2 border-r-teal-500">
         <div class="text-white text-3xl font-semibold w-10 h-10 rounded bg-teal-700 flex justify-center items-center bg-[url('src/assets/img/me.jpeg')] bg-cover"></div>
         <a class="px-14 absolute text-white font-semibold hidden group-hover:flex overflow-hidden" [ngClass]="{'!flex': collapse}">Mario Ruano</a>
     </a>
     <div class="w-full h-0.5 mt-2 bg-gray-700"></div>
-    <a class="flex w-full justify-start items-center h-9 mt-3 transition-colors duration-700 hover:bg-slate-900 rounded px-3 cursor-pointer" routerLinkActive="border-r-2 border-r-teal-500">
+    <a class="flex w-full justify-start items-center h-9 mt-3 transition-colors duration-700 hover:bg-slate-900 rounded px-3 cursor-pointer" routerLink="dashboard" routerLinkActive="border-r-2 border-r-teal-500">
         <div class="text-white text-xl font-semibold w-10 h-10 rounded flex justify-center items-center"><i class="fas fa-tachometer-alt"></i></div>
         <span class="px-14 text-sm absolute text-white font-semibold hidden group-hover:flex overflow-hidden" [ngClass]="{'!flex': collapse}" >Dashboard</span>
     </a>

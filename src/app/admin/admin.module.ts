@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { PerfilComponent } from '../pages/perfil/perfil.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from '../pages/dashboard/dashboard.component';
+import { IconsComponent } from '../pages/icons/icons.component';
+import { ActivityComponent } from '../pages/activity/activity.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { DashboardComponent } from '../pages/dashboard/dashboard.component';
     PerfilComponent,
     FooterComponent,
     HeaderComponent,
-    DashboardComponent
+    DashboardComponent,
+    IconsComponent,
+    ActivityComponent
   ],
   imports: [
     CommonModule,

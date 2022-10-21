@@ -14,12 +14,12 @@
         <div class="text-white text-xl font-semibold w-10 h-10 rounded flex justify-center items-center"><i class="fas fa-tachometer-alt"></i></div>
         <span class="px-14 text-sm absolute text-white font-semibold hidden group-hover:flex overflow-hidden" [ngClass]="{'!flex': collapse}" >Dashboard</span>
     </a>
-    <a class="flex w-full justify-start items-center h-9 mt-1 transition-colors duration-700 hover:bg-slate-900 rounded px-3 cursor-pointer" routerLinkActive="border-r-2 border-r-teal-500" (click)="collapse=false">
+    <a class="flex w-full justify-start items-center h-9 mt-1 transition-colors duration-700 hover:bg-slate-900 rounded px-3 cursor-pointer" routerLink="icons" routerLinkActive="border-r-2 border-r-teal-500" (click)="collapse=false">
         <div class="text-white text-xl font-semibold w-10 h-10 rounded flex justify-center items-center"><i class="fas fa-folder"></i></div>
         <span class="px-14 text-sm absolute text-white font-semibold hidden group-hover:flex overflow-hidden" [ngClass]="{'!flex': collapse}">Icons</span>
     </a>
     <div class="text-slate-500 h-10 m-1 flex items-center gap-2"><div class="hidden group-hover:flex w-full items-center overflow-hidden justify-center" [ngClass]="{'!flex': collapse}">Separador</div> <div class="w-full h-0.5 mt-2 bg-gray-700"></div></div>
-    <div class="group-submenu flex flex-wrap flex-row w-full justify-start items-center transition-colors duration-500 hover:bg-slate-900 rounded px-3 cursor-pointer overflow-hidden" routerLinkActive="border-r-2 border-r-teal-500">
+    <div class="group-submenu flex flex-wrap flex-row w-full justify-start items-center transition-colors duration-500 hover:bg-slate-900 rounded px-3 cursor-pointer overflow-hidden" routerLink="activity" routerLinkActive="border-r-2 border-r-teal-500">
         <div class="flex items-center">
             <div class="relative text-white rounded flex justify-center items-center px-2 w-10 h-10 text-xl"> 
                 <div class="w-2.5 h-2.5 bg-red-600 rounded-full absolute bottom-2 right-2 z-50 group-submenu-hover:bg-orange-600 text-xs text-center"></div> 

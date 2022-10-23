@@ -4,6 +4,7 @@ import { IconsComponent } from '../pages/icons/icons.component';
 import { DashboardComponent } from '../pages/dashboard/dashboard.component';
 import { PerfilComponent } from '../pages/perfil/perfil.component';
 import { ActivityComponent } from '../pages/activity/activity.component';
+import { ProjectsComponent } from '../pages/projects/projects.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'activity',
     component: ActivityComponent
+  },
+  {
+    path: 'project/:id',
+    component: ProjectsComponent
   },
   {
     path: '**',

@@ -10,7 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from '../pages/dashboard/dashboard.component';
 import { IconsComponent } from '../pages/icons/icons.component';
 import { ActivityComponent } from '../pages/activity/activity.component';
-
+import { ProjectsComponent } from '../pages/projects/projects.component';
+import { DragDropModule } from '@angular/cdk/drag-drop'
 
 @NgModule({
   declarations: [
@@ -21,10 +22,12 @@ import { ActivityComponent } from '../pages/activity/activity.component';
     HeaderComponent,
     DashboardComponent,
     IconsComponent,
-    ActivityComponent
+    ActivityComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule,
+    DragDropModule,
     AdminRoutingModule
   ]
 })
